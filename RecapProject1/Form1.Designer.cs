@@ -30,12 +30,12 @@ namespace RecapProject1
         private void InitializeComponent()
         {
             this.gbxCategory = new System.Windows.Forms.GroupBox();
-            this.cbxCategory = new System.Windows.Forms.ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
+            this.cbxCategory = new System.Windows.Forms.ComboBox();
             this.gbxSearch = new System.Windows.Forms.GroupBox();
+            this.tbxSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
             this.dgwProduct = new System.Windows.Forms.DataGridView();
-            this.tbxSearch = new System.Windows.Forms.TextBox();
             this.gbxCategory.SuspendLayout();
             this.gbxSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
@@ -52,14 +52,6 @@ namespace RecapProject1
             this.gbxCategory.TabStop = false;
             this.gbxCategory.Text = "Kategoriye Göre Listele";
             // 
-            // cbxCategory
-            // 
-            this.cbxCategory.FormattingEnabled = true;
-            this.cbxCategory.Location = new System.Drawing.Point(69, 24);
-            this.cbxCategory.Name = "cbxCategory";
-            this.cbxCategory.Size = new System.Drawing.Size(182, 21);
-            this.cbxCategory.TabIndex = 0;
-            // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
@@ -68,6 +60,15 @@ namespace RecapProject1
             this.lblCategory.Size = new System.Drawing.Size(52, 13);
             this.lblCategory.TabIndex = 1;
             this.lblCategory.Text = "Kategori :";
+            // 
+            // cbxCategory
+            // 
+            this.cbxCategory.FormattingEnabled = true;
+            this.cbxCategory.Location = new System.Drawing.Point(69, 24);
+            this.cbxCategory.Name = "cbxCategory";
+            this.cbxCategory.Size = new System.Drawing.Size(182, 21);
+            this.cbxCategory.TabIndex = 0;
+            this.cbxCategory.SelectedIndexChanged += new System.EventHandler(this.cbxCategory_SelectedIndexChanged);
             // 
             // gbxSearch
             // 
@@ -79,6 +80,14 @@ namespace RecapProject1
             this.gbxSearch.TabIndex = 1;
             this.gbxSearch.TabStop = false;
             this.gbxSearch.Text = "Ürün İsmine Göre Ara";
+            // 
+            // tbxSearch
+            // 
+            this.tbxSearch.Location = new System.Drawing.Point(69, 27);
+            this.tbxSearch.Name = "tbxSearch";
+            this.tbxSearch.Size = new System.Drawing.Size(182, 20);
+            this.tbxSearch.TabIndex = 2;
+            this.tbxSearch.TextChanged += new System.EventHandler(this.tbxSearch_TextChanged);
             // 
             // lblSearch
             // 
@@ -96,13 +105,6 @@ namespace RecapProject1
             this.dgwProduct.Name = "dgwProduct";
             this.dgwProduct.Size = new System.Drawing.Size(636, 242);
             this.dgwProduct.TabIndex = 2;
-            // 
-            // tbxSearch
-            // 
-            this.tbxSearch.Location = new System.Drawing.Point(69, 27);
-            this.tbxSearch.Name = "tbxSearch";
-            this.tbxSearch.Size = new System.Drawing.Size(182, 20);
-            this.tbxSearch.TabIndex = 2;
             // 
             // Form1
             // 

@@ -14,7 +14,7 @@ namespace RecapProject1.Entities
         public decimal UnitPrice { get; set; }
 
         //small int olarak tutulduğu için tabloda int16 yaptık
-        public UInt16 UnitsInStock { get; set; }
+        public Int16 UnitsInStock { get; set; }
         public string QuantityPerUnit { get; set; }
     }
 }
